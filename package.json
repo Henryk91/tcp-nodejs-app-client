@@ -1,0 +1,14 @@
+{
+  "name": "tcp-nodejs-app-client",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "bg": "node server.js &"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+body{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Lora', serif;
+}
+#msgBox{
+  width: 40vw;
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+#outerBox{
+  border-radius: 2px;
+  border: 1px solid black;
+  padding: 5px;
+}
+textarea{
+  width: 90%;
+  min-height: 50px;
+}
+p{
+  text-align: left;
+}
