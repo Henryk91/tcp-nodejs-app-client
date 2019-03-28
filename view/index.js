@@ -6,7 +6,7 @@ let send = () => {
     $('#sentMsg').text("You Sent: " + msg);
 
     $.ajax({
-        url: "http://localhost:3000/send_msg",
+        url: "/send_msg",
         type: "POST",
         dataType: "json",
         data: JSON.stringify({
@@ -31,9 +31,11 @@ let send = () => {
 
 function ajaxCall() {
     $.ajax({
-        url: "http://localhost:3000/data", success: function (result) {
+        url: "/data", success: function (result) {
 
             if (result !== myLastMsg) {
+                result = result.replace(/\n/g, "<br />");
+                console.log(result)
                 $('#recMsg').text(result);
             }
         }
